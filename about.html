@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>About - PassGen</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* ABOUT PAGE SPECIFIC STYLING */
+    main {
+      max-width: 800px;
+      margin: 150px auto;
+      padding: 0 20px;
+      text-align: center;
+    }
+
+    .author-name {
+      font-size: 80px;
+      font-weight: 900;
+      background: linear-gradient(135deg, #ff7e5f, #feb47b);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-bottom: 20px;
+      letter-spacing: 5px;
+      border-radius: 50px;
+      display: inline-block;
+      padding: 20px 40px;
+      transform: rotate(-3deg);
+      transition: transform 0.3s ease;
+    }
+
+    .author-name:hover {
+      transform: rotate(3deg) scale(1.05);
+    }
+
+    .subtitle {
+      font-size: 24px;
+      font-weight: 600;
+      color: #555;
+      margin-bottom: 40px;
+      display: block;
+    }
+
+    .bio {
+      font-size: 18px;
+      line-height: 1.7;
+      color: #333;
+      margin-bottom: 20px;
+      transition: all 0.3s ease;
+    }
+
+    .bio span.highlight {
+      font-weight: 700;
+      color: #ff7e5f;
+    }
+
+    a {
+      color: #ff7e5f;
+      text-decoration: none;
+      font-weight: 600;
+      transition: 0.3s;
+    }
+    a:hover {
+      color: #feb47b;
+    }
+  </style>
+</head>
+<body>
+
+<header class="topbar">
+  <div class="nav-left">
+    <span class="logo">PassGen</span>
+    <a href="index.html">Generator</a>
+    <a href="about.html">About</a>
+    <a href="history.html">History</a>
+  </div>
+  <button id="mode-toggle">Dark Mode</button>
+</header>
+
+<main>
+  <div class="author-name">Achyuttam Bakshi</div>
+  <span class="subtitle">Fhro King</span>
+
+  <p class="bio">
+    I am a <span class="highlight">passionate web developer</span> focused on creating <span class="highlight">secure and modern web tools</span>. 
+    Every project I build emphasizes <span class="highlight">simplicity, usability, and elegance</span>.
+  </p>
+  <p class="bio">
+    <span class="highlight">PassGen</span> is my personal project aimed at combining <span class="highlight">security</span> with <span class="highlight">creative design</span>. 
+    I enjoy crafting interfaces that are both <span class="highlight">aesthetically pleasing</span> and <span class="highlight">functional</span>.
+  </p>
+  <p class="bio">
+    I constantly experiment with <span class="highlight">animations</span>, <span class="highlight">responsive design</span>, and <span class="highlight">user experience</span> to create tools that feel intuitive and enjoyable to use.
+  </p>
+  <p class="bio">
+    My mission is to make security tools that are <span class="highlight">accessible</span>, <span class="highlight">beautiful</span>, and <span class="highlight">reliable</span>.
+  </p>
+  <p class="bio">
+    📧 Email: <a href="mailto:achyuttambakshi11@gmail.com">achyuttambakshi11@gmail.com</a> <br>
+    📸 Instagram: <a href="https://instagram.com/achyuttambakshi" target="_blank">achyuttambakshi</a>
+  </p>
+</main>
+
+<script src="app.js"></script>
+</body>
+</html>

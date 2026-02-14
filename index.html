@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>PassGen</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="nav-left">
+    <span class="logo">PassGen</span>
+    <a href="index.html">Generator</a>
+    <a href="about.html">About</a>
+    <a href="history.html">History</a>
+  </div>
+  <button id="mode-toggle">Dark Mode</button>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Automatic Password Generator</h1>
+      <p>Secure, random & modern passwords with style.</p>
+      <span class="user-greeting">Hello, User</span>
+    </div>
+
+    <div class="generator-card">
+      <div class="form-group">
+        <label>Password Length</label>
+        <input type="number" id="length" placeholder="e.g., 12">
+      </div>
+
+      <div class="form-group">
+        <label>Custom Word (optional)</label>
+        <input type="text" id="custom" placeholder="Include any word">
+      </div>
+
+      <div class="form-group">
+        <label>Difficulty Level</label>
+        <select id="level">
+          <option value="1">Baby</option>
+          <option value="2">Easy</option>
+          <option value="3">Medium</option>
+          <option value="4">Hard</option>
+          <option value="5">Insane</option>
+        </select>
+      </div>
+
+      <div class="buttons">
+        <button class="gen-btn" onclick="generate()">Generate</button>
+        <button class="gen-btn lucky-btn" onclick="luckyPassword()">Lucky!</button>
+      </div>
+
+      <div class="output" id="output"><span>••••••••••</span></div>
+      <div class="strength-bar">
+        <div id="strength-fill"></div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<script src="app.js"></script>
+</body>
+</html>
